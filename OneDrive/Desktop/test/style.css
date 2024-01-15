@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.test{
+color: blueviolet;
+width: 155px;
+height: 55px;
+padding-bottom: 50px;
+font-size: 55px;
+}
+.img{
+    width: 500px;
+    height: 650px;
+    padding: 20 20 20 20;
+
+}
+.paragraph{
+    color: brown;
+    width: 155px;
+    height: 155px;
+    font-size: 55px;
+}
+.a{
+    color: blueviolet;
+    font-size: 55px;
+}
