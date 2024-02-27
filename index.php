@@ -34,7 +34,10 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <?php require "header.php" ?>
+  <?php
+  require "header.php";
+  require "about-function.php";
+  ?>
 
 </head>
 
@@ -69,9 +72,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
-                    <?php
+                  <?php
                     printHeader();
-                    ?>
+                  ?>
                 </ul>
               </div>
               <div class="quote_btn-container">
@@ -289,26 +292,9 @@
   <section class="about_section">
     <div class="container  ">
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About <span>Hospital</span>
-              </h2>
-            </div>
-            <p>
-              has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
+        <?php
+          printAbout();
+        ?>
       </div>
     </div>
   </section>
@@ -702,22 +688,22 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a class="active" href="index.html">
+                <a class="active" href="index.php">
                   Home
                 </a>
-                <a href="about.html">
+                <a href="about.php">
                   About
                 </a>
-                <a href="treatment.html">
+                <a href="treatment.php">
                   Treatment
                 </a>
-                <a href="doctor.html">
+                <a href="doctor.php">
                   Doctors
                 </a>
-                <a href="testimonial.html">
+                <a href="testimonial.php">
                   Testimonial
                 </a>
-                <a href="contact.html">
+                <a href="contact.php">
                   Contact us
                 </a>
               </div>

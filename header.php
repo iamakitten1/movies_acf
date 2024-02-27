@@ -29,6 +29,7 @@
           </div>';
         }
     }
+    
     function printHeader() : void {
         $categories = [
             [
