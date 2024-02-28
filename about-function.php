@@ -1,14 +1,15 @@
 <?php
-    function printAbout () : void {
-        $information = [
-            [
-                'image' => 'images/about-img.jpg',
-                'title1' => "About ",
-                'title2' => "Hospital",
-                'text' => "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-                'button' => 'Read More',
-            ]
-        ];
+    $information = [
+        [
+            'image' => 'images/about-img.jpg',
+            'title1' => "About ",
+            'title2' => "Hospital",
+            'text' => "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
+            'button' => 'Read More',
+        ]
+    ];
+
+    function printAbout ($information) : void {
 
         foreach ($information as $info) {
             echo '<div class="col-md-6 ">

@@ -37,7 +37,7 @@
   <?php
     require "header.php";
     require "about-function.php";
-    require "footer-function";
+    require "footer-function.php";
   ?>
 
 </head>
@@ -52,7 +52,7 @@
           <div class="contact_nav">
             <a href="">
                 <?php
-                  printContact();
+                  printContact($infos);
                 ?>
             </a>
           </div>
@@ -74,7 +74,7 @@
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
                   <?php
-                    printHeader();
+                    printHeader($categories);
                   ?>
                 </ul>
               </div>
@@ -112,7 +112,7 @@
     <div class="container  ">
       <div class="row">
         <?php
-          printAbout();
+          printAbout($information);
         ?>
       </div>
     </div>
@@ -267,7 +267,7 @@
   <!-- footer section -->
   <footer class="footer_section">
     <?php
-      printFooter();
+      printFooter($rights);
     ?>
   </footer>
   <!-- footer section -->

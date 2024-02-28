@@ -36,7 +36,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <?php
     require "header.php";
-    require "footer-function";
+    require "footer-function.php";
   ?>
 
 </head>
@@ -51,7 +51,7 @@
           <div class="contact_nav">
             <a href="">
               <?php
-                printContact();
+                printContact($infos);
               ?>
             </a>
           </div>
@@ -73,7 +73,7 @@
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
                   <?php
-                    printHeader();
+                    printHeader($categories);
                   ?>
                 </ul>
               </div>
@@ -335,7 +335,7 @@
   <!-- footer section -->
   <footer class="footer_section">
     <?php
-      printFooter();
+      printFooter($rights);
     ?>
   </footer>
   <!-- footer section -->
