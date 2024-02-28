@@ -35,8 +35,9 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <?php
-  require "header.php";
-  require "about-function.php";
+    require "header.php";
+    require "about-function.php";
+    require "footer-function";
   ?>
 
 </head>
@@ -289,7 +290,7 @@
 
   <!-- about section -->
 
-  <section class="about_section">
+  <section class="about_section layout_padding">
     <div class="container  ">
       <div class="row">
         <?php
@@ -769,10 +770,9 @@
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
+      <?php
+        printFooter();
+      ?>
     </div>
   </footer>
   <!-- footer section -->

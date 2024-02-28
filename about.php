@@ -34,7 +34,11 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <?php require "header.php" ?>
+  <?php
+    require "header.php";
+    require "about-function.php";
+    require "footer-function";
+  ?>
 
 </head>
 
@@ -107,26 +111,9 @@
   <section class="about_section layout_padding">
     <div class="container  ">
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About <span>Hospital</span>
-              </h2>
-            </div>
-            <p>
-              has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
+        <?php
+          printAbout();
+        ?>
       </div>
     </div>
   </section>
@@ -279,12 +266,9 @@
 
   <!-- footer section -->
   <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
+    <?php
+      printFooter();
+    ?>
   </footer>
   <!-- footer section -->
 
