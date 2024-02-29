@@ -1,9 +1,9 @@
 <?php
     $infos = [
         [
-        'class' => 'fa fa-phone',
-        'icon' => 'aria-hidden="true"',
-        'info' => 'Call : +01 123455678990',
+            'class' => 'fa fa-phone',
+            'icon' => 'aria-hidden="true"',
+            'info' => 'Call : +01 123455678990',
         ],
         [
             'class' => 'fa fa-envelope',
@@ -58,8 +58,6 @@
     ];
 
     function printHeader($categories) : void {
-        
-
         foreach ($categories as $category) {
             echo '<div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                     <ul class="navbar-nav  ">

@@ -36,6 +36,10 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <?php
     require "header.php";
+    require "subscribe-function.php";
+    require "adress-section.php";
+    require "link-section.php";
+    require "posts-news.php";
     require "footer-function.php";
   ?>
 
@@ -193,137 +197,36 @@
   <section class="info_section ">
     <div class="container">
       <div class="info_top">
-        <div class="info_logo">
-          <a href="">
-            <img src="images/logo.png" alt="">
-          </a>
-        </div>
-        <div class="info_form">
-          <form action="">
-            <input type="email" placeholder="Your email">
-            <button>
-              Subscribe
-            </button>
-          </form>
-        </div>
+        <?php
+          printInfoSubscribe($subscribes);
+        ?>
       </div>
       <div class="info_bottom layout_padding2">
         <div class="row info_main_row">
-          <div class="col-md-6 col-lg-3">
-            <h5>
-              Address
-            </h5>
-            <div class="info_contact">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+          <?php
+            printAddress($contacts, $socials);
+          ?>
           <div class="col-md-6 col-lg-3">
             <div class="info_links">
-              <h5>
-                Useful link
-              </h5>
               <div class="info_links_menu">
-                <a href="index.php">
-                  Home
-                </a>
-                <a href="about.php">
-                  About
-                </a>
-                <a href="treatment.php">
-                  Treatment
-                </a>
-                <a href="doctor.php">
-                  Doctors
-                </a>
-                <a class="active" href="testimonial.php">
-                  Testimonial
-                </a>
-                <a href="contact.php">
-                  Contact us
+                <h5 style="margin-bottom: 0;">Useful link</h5>
+                <a class="active">
+                  <?php
+                    printUsefulLinks($links);
+                  ?>
                 </a>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="info_post">
-              <h5>
-                LATEST POSTS
-              </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post1.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post2.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-            </div>
+            <?php
+              printLatestPosts($posts);
+            ?>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="info_post">
-              <h5>
-                News
-              </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post3.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post4.png" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-            </div>
+            <?php
+              printNews($news);
+            ?>
           </div>
         </div>
       </div>
@@ -334,9 +237,11 @@
 
   <!-- footer section -->
   <footer class="footer_section">
-    <?php
-      printFooter($rights);
-    ?>
+    <div class="container">
+      <?php
+        printFooter($rights);
+      ?>
+    </div>
   </footer>
   <!-- footer section -->
 
