@@ -643,14 +643,14 @@
           ?>
           <div class="col-md-6 col-lg-3">
             <div class="info_links">
-              <div class="info_links_menu">
-                <h5 style="margin-bottom: 0;">Useful link</h5>
-                <a class="active">
-                  <?php
-                    printUsefulLinks($links);
-                  ?>
-                </a>
-              </div>
+                <div class="info_links_menu">
+                  <h5>Useful link</h5>
+                  <div class="active">
+                    <?php
+                      printUsefulLinks($links);
+                    ?>
+                  </div>
+                </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
