@@ -36,6 +36,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <?php
     require "header.php";
+    require "hospitalTreatement.php";
     require "subscribe-function.php";
     require "adress-section.php";
     require "link-section.php";
@@ -115,7 +116,6 @@
     <?php hospitalTreatement($hospitalTreatementInfo)?>
   </section>
 
-  
   <!-- end treatment section -->
 
   <!-- info section -->
