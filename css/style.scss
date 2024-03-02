@@ -16,7 +16,6 @@ $textCol: #999;
   background-color: $col1;
   color: $col2;
   border-radius: $bRadius;
-
   &:hover {
     background-color: darken($color: $col1, $amount: 10);
   }
@@ -622,8 +621,6 @@ a:focus {
       h4 {
         font-weight: bold;
       }
-
-      p {}
 
       a {
         text-transform: uppercase;
