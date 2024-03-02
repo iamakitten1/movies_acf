@@ -32,27 +32,27 @@
     
     $categories = [
         [
-            'link' => '/Full-Mico/index.php',
+            'link' => '/Mico/index.php',
             'name' => 'HOME',
         ],
         [
-            'link' => '/Full-Mico/about.php',
+            'link' => '/Mico/about.php',
             'name' => 'ABOUT',
         ],
         [
-            'link' => '/Full-Mico/treatment.php',
+            'link' => '/Mico/treatment.php',
             'name' => 'TREATMENT',
         ],
         [
-            'link' => '/Full-Mico/doctor.php',
+            'link' => '/Mico/doctor.php',
             'name' => 'DOCTORS',
         ],
         [
-            'link' => '/Full-Mico/testimonial.php',
+            'link' => '/Mico/testimonial.php',
             'name' => 'TESTIMONIAL',
         ],
         [
-            'link' => '/Full-Mico/contact.php',
+            'link' => '/Mico/contact.php',
             'name' => 'CONTACT US',
         ],
     ];
