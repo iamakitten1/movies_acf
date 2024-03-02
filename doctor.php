@@ -42,7 +42,6 @@
     require "posts-news.php";
     require "footer-function.php";
   ?>
-
 </head>
 
 <body class="sub_page">
