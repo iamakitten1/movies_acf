@@ -70,4 +70,3 @@ foreach ($doctors as $doctor) {
     </div>
     <?php
 }
-?>
