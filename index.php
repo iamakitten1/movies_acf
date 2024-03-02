@@ -112,7 +112,7 @@
     <!-- slider section -->
     <section class="slider_section ">
     <?php
-        printSliderSection($slides);
+      printSliderSection($slides);
     ?>
     <?php
       printCarouselControls($carouselId, $prevImageSrc, $nextImageSrc);

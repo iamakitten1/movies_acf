@@ -42,7 +42,6 @@
     require "link-section.php";
     require "posts-news.php";
     require "footer-function.php";
-  ?>
 
 </head>
 
@@ -146,8 +145,8 @@
                   <?php
                     printUsefulLinks($links);
                   ?>
-                </a>
-              </div>
+                  </div>
+                </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
