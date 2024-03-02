@@ -38,13 +38,13 @@
     require "header.php";
     require "slides-function.php";
     require "about-function.php";
+    require "hospitalTreatement.php";
     require "testimonial-function.php";
     require "subscribe-function.php";
     require "footer-function.php";
     require "adress-section.php";
     require "link-section.php";
     require "posts-news.php";
-    require "hospitalTreatement.php";
   ?>
 
 </head>
@@ -115,6 +115,7 @@
     <?php
       printSliderSection($slides);
     ?>
+
     <?php
       printCarouselControls($carouselId, $prevImageSrc, $nextImageSrc);
     ?>
@@ -211,7 +212,7 @@
   <!-- end treatment section -->
 
   <!-- team section -->
-
+  
   <section class="team_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
@@ -224,16 +225,15 @@
           <?php
             require "ourdoctors.php"
           ?>
-          <!-- <div class="item">
-            <div class="box">
         </div>
       </div>
     </div>
   </section>
 
+
 <!-- end team section -->
-          
-          
+
+
   <!-- client section -->
   <section class="client_section layout_padding">
   <div class="container">
