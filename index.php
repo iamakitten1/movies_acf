@@ -36,6 +36,7 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <?php
     require "header.php";
+    require "slides-function.php";
     require "about-function.php";
     require "testimonial-function.php";
     require "subscribe-function.php";
